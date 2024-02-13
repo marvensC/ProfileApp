@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "ZhMjk3eplMR4Zy4hKOeDEnvmnXX2": {
+        "type": "object",
+        "properties": {
+          "bio": {"type": "string"},
+          "image": {"type": "string", "format": "uri"},
+          "movie": {"type": "string"},
+          "name": {"type": "string"},
+          "sport": {"type": "string"}
+        },
+        "required": ["bio", "image", "movie", "name", "sport"]
+      },
+      "highScore": {"type": "integer"},
+      "lfg2WrkvEleQ40mpeQHoKGHNlC62": {
+        "type": "object",
+        "properties": {
+          "bio": {"type": "string"},
+          "image": {"type": "string", "format": "uri"},
+          "movie": {"type": "string"},
+          "name": {"type": "string"},
+          "sport": {"type": "string"}
+        },
+        "required": ["bio", "image", "movie", "name", "sport"]
+      },
+      "true": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"}
+        },
+        "required": ["name"]
+      }
+    },
+    "required": ["ZhMjk3eplMR4Zy4hKOeDEnvmnXX2", "highScore", "lfg2WrkvEleQ40mpeQHoKGHNlC62", "true"]
+  }
+  
