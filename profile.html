@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile App</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+    #banner {
+      width: 100%;
+      height: 240px;
+    }
+
+    #embeddedApp {
+      margin: 0;
+      padding: 0;
+      height: 100vh; /* Adjust this value as needed */
+      border: 1px solid black; /* Add this line to keep the border */
+    }
+  </style>
+  <!-- Firebase Scripts -->
+  <script type="module">
+    // Your Firebase code here
+  </script>
+</head>
+<body>
+  <img id="banner" src="bannerProfile.png" alt="Banner Image">
+
+  <h1>Profile App</h1>
+
+  <!-- Thunkable App Embed -->
+  <iframe src="https://thunkable.site/w/nZc2CIzZ_yqsp8bx2JRea" height="1000" width="500" id="embeddedApp"></iframe>
+
+  <h2>Profile App Data</h2>
+
+  <!-- User Profiles -->
+  <div id="user1"></div>
+  <div id="user2"></div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+    import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyC7L81EObky5yInu4jDo32IZd0JAJT8TM0",
+    authDomain: "profile-52ae2.firebaseapp.com",
+    databaseURL: "https://profile-52ae2-default-rtdb.firebaseio.com",
+    projectId: "profile-52ae2",
+    storageBucket: "profile-52ae2.appspot.com",
+    messagingSenderId: "1028608206606",
+    appId: "1:1028608206606:web:688a7f5f33e758a478195f",
+    measurementId: "G-DY0P582C0K"
+    };
+    
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    
+    var database = getDatabase();
+    
+    // Retrieve data for user with UID "ZhMjk3eplMR4Zy4hKOeDEnvmnXX2"
+    var user1Ref = ref(database, 'ZhMjk3eplMR4Zy4hKOeDEnvmnXX2');
+    onValue(user1Ref, function(snapshot) {
+      var user1Data = snapshot.val();
+      displayUserData('user1', user1Data);
+    });
+    
+    // Retrieve data for user with UID "lfg2WrkvEleQ40mpeQHoKGHNlC62"
+    var user2Ref = ref(database, 'lfg2WrkvEleQ40mpeQHoKGHNlC62');
+    onValue(user2Ref, function(snapshot) {
+      var user2Data = snapshot.val();
+      displayUserData('user2', user2Data);
+    });
+    
+    function displayUserData(userId, userData) {
+      if (userData) {
+        document.getElementById(userId).innerHTML = `
+          <h2>${userData.name}</h2>
+          <img src="${userData.image}" alt="${userId} Image" style="width: 200px;">
+          <table>
+            <tr>
+              <th>Favorite Sport</th>
+              <td>${userData.sport}</td>
+            </tr>
+            <tr>
+              <th>Bio</th>
+              <td>${userData.bio}</td>
+            </tr>
+            <tr>
+              <th>Favorite Movie</th>
+              <td>${userData.movie}</td>
+            </tr>
+          </table>
+        `;
+      } else {
+        document.getElementById(userId).innerHTML = 'User data not available';
+      }
+    }
+  </script>
+</body>
+</html>
