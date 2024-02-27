@@ -74,22 +74,22 @@
                 "Height": 32,
                 "X": 0,
                 "ParentId": "d79376ee-6e90-41b5-a88e-2dd691c3fcda",
-                "Y": 612.7999877929688,
+                "Y": 612.2000122070312,
                 "RelativeX": 0,
                 "RelativeY": 612,
                 "position": "absolute",
-                "edgeOffsets": 612.7999877929688,
+                "edgeOffsets": 612.2000122070312,
                 "style": {
                     "position": "absolute",
-                    "left": "7.920003255208333%",
-                    "top": "86.32683475156952%",
+                    "left": "0%",
+                    "top": "88.03598383913511%",
                     "display": "flex"
                 }
             },
             "children": [],
-            "id": "6c02d98e-3c3b-4d5b-99ca-fdcb6cec7c1a",
+            "id": "31ab7bbb-33b8-467f-9eba-d51f23890cee",
             "thunkableVersion": 446,
-            "name": "AdMob_Banner1"
+            "name": "AdMob_Banner"
         },
         {
             "type": "Label",

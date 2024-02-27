@@ -117,12 +117,12 @@
             "properties": {
                 "Picture": "marvensgram-high-resolution-logo (1).png",
                 "resizeMode": "cover",
-                "Height": 71,
-                "Width": 233,
+                "Height": 66,
+                "Width": 232,
                 "Visible": true,
-                "X": 71,
+                "X": 74,
                 "Y": 9,
-                "RelativeX": 71,
+                "RelativeX": 74,
                 "RelativeY": 9,
                 "ResizeMode": "FLOAT_IN_PLACE",
                 "style": {
@@ -152,7 +152,7 @@
                 "capInsets": {},
                 "ParentId": "d79376ee-6e90-41b5-a88e-2dd691c3fcda",
                 "position": "absolute",
-                "edgeOffsets": 8.799999237060554,
+                "edgeOffsets": 9,
                 "BackgroundColor": "rgba(255, 255, 255, 1)"
             },
             "children": [],
@@ -240,10 +240,10 @@
                 "Height": 35,
                 "Width": 265,
                 "Visible": true,
-                "X": 47,
-                "Y": 409,
-                "RelativeX": 47,
-                "RelativeY": 409,
+                "X": 55,
+                "Y": 413,
+                "RelativeX": 55,
+                "RelativeY": 413,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -274,7 +274,7 @@
                 "Disabled": false,
                 "ParentId": "c05b64c7-3290-4e1d-9db7-dbe23ae7190f",
                 "position": "absolute",
-                "edgeOffsets": 409
+                "edgeOffsets": 413
             },
             "children": [],
             "id": "b7b870d3-0b74-4604-9abb-1a8e43fe72ec",
