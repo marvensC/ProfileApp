@@ -210,7 +210,10 @@
                 "cloudinaryAPISecret": "JvgjWTujybrAKOA3cDkoW4If-SY",
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSPhotoLibraryUsageDescription": "",
+                            "NSCameraUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
@@ -271,7 +274,10 @@
                 "cloudinaryAPISecret": "JvgjWTujybrAKOA3cDkoW4If-SY",
                 "permissions": {
                     "ios": {
-                        "usageDescriptions": {}
+                        "usageDescriptions": {
+                            "NSPhotoLibraryUsageDescription": "",
+                            "NSCameraUsageDescription": ""
+                        }
                     }
                 },
                 "googleMapAPIKeyAndroid": null,
