@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-426565503-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-426565503-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile App</title>
@@ -53,13 +63,13 @@
     
     const firebaseConfig = {
       apiKey: "AIzaSyC7L81EObky5yInu4jDo32IZd0JAJT8TM0",
-    authDomain: "profile-52ae2.firebaseapp.com",
-    databaseURL: "https://profile-52ae2-default-rtdb.firebaseio.com",
-    projectId: "profile-52ae2",
-    storageBucket: "profile-52ae2.appspot.com",
-    messagingSenderId: "1028608206606",
-    appId: "1:1028608206606:web:688a7f5f33e758a478195f",
-    measurementId: "G-DY0P582C0K"
+      authDomain: "profile-52ae2.firebaseapp.com",
+      databaseURL: "https://profile-52ae2-default-rtdb.firebaseio.com",
+      projectId: "profile-52ae2",
+      storageBucket: "profile-52ae2.appspot.com",
+      messagingSenderId: "1028608206606",
+      appId: "1:1028608206606:web:688a7f5f33e758a478195f",
+      measurementId: "G-DY0P582C0K"
     };
     
     const app = initializeApp(firebaseConfig);
